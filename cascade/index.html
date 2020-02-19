@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            color: rebeccapurple;
+            border: 2px solid #ccc;
+            padding: 1em;
+        }
+
+        .special {
+            color: black;
+            font-weight: bold;
+        }
+
+        body {
+            color: green;
+        }
+
+        .my-class-1 a {
+            color: inherit;
+        }
+
+        .my-class-2 a {
+            color: initial;
+        }
+
+        .my-class-3 a {
+            color: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="main">
+        <li>Item One</li>
+        <li>Item Two
+            <ul>
+                <li>2.1</li>
+                <li>2.2</li>
+            </ul>
+        </li>
+        <li>Item Three
+            <ul class="special">
+                <li>3.1
+                    <ul>
+                        <li>3.1.1</li>
+                        <li>3.1.2</li>
+                    </ul>
+                </li>
+                <li>3.2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>Default <a href="#">link</a> color</li>
+        <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+        <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+        <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+    </ul>
+
+</body>
+
+</html>
