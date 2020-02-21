@@ -1,0 +1,63 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background: #e7e7e7;
+    color: black;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.button {
+    border-radius: 3px;
+    border: solid 2px #1c6698;
+    padding: 14px 36px;
+    color: #1c6698;
+}
+.button:hover {
+    background: #1c6698;
+    color: white;
+}
+a.button {
+    text-decoration: none;
+}
+
+
+/* layout */
+.wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+header,
+#about-me,
+footer,
+.skill {
+    background: black;
+    color: white;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
