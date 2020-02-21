@@ -179,3 +179,11 @@ header.nav-open ul li {
     padding: 0;
     list-style: none;
 }
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 104px;
+}
