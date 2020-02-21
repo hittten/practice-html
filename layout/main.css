@@ -50,7 +50,7 @@ a.button {
 
 /* layout */
 .wrapper {
-    padding-left: 24px;
+    padding-left: 24px; /*update #skills .list .skill:first-child*/
     padding-right: 24px;
 }
 
@@ -173,7 +173,13 @@ header.nav-open ul li {
     overflow: auto;
 }
 
+#skills .list::after{
+    content: "";
+    padding-right: 24px;
+}
+
 #skills .list .skill {
+    flex-shrink: 0;
     box-sizing: border-box;
     padding: 30px 35px;
     width: 208px;
@@ -181,6 +187,14 @@ header.nav-open ul li {
     border-radius: 3px;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
     margin-right: 32px;
+}
+
+#skills .list .skill:first-child {
+    margin-left: 24px; /* update .wrapper*/
+}
+
+#skills .list .skill:last-child {
+    margin-right: 0;
 }
 
 #skills .list .skill h3 {
