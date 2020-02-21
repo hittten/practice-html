@@ -83,8 +83,25 @@ header #icon-open {
 
 }
 
-header #icon-close {display: none;}
+header #icon-close {
+    display: none;
+}
 
 header nav {
     display: none;
+}
+
+/* summary */
+#summary {
+
+}
+
+#summary p {
+    font-size: 18px;
+}
+
+/* TODO fix button */
+#summary h1 {
+    margin-top: 24px;
+    margin-bottom: 34px;
 }
