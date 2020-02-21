@@ -2,6 +2,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
     margin: 0;
     background: #e7e7e7;
     color: black;
@@ -10,6 +12,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-weight: normal;
 }
 
 h1 {
@@ -54,10 +58,33 @@ header,
 footer,
 .skill {
     background: black;
-    color: white;
+    color: #a2a2a2;
 }
 
 section {
     padding-top: 60px;
     padding-bottom: 70px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+header h2 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+header #icon-open {
+
+}
+
+header #icon-close {display: none;}
+
+header nav {
+    display: none;
 }
