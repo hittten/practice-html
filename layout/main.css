@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, header ul {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
     font-weight: normal;
@@ -89,6 +89,45 @@ header #icon-close {
 
 header nav {
     display: none;
+}
+
+/* menu */
+header.nav-open #icon-open {
+    display: none;
+}
+
+header.nav-open nav,
+header.nav-open #icon-close {
+    display: block;
+}
+
+header.nav-open nav {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #e7e7e7;
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.nav-open #icon-close {
+    z-index: 10;
+}
+
+header.nav-open ul {
+    letter-spacing: 2px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+header.nav-open ul li {
+    color: #1c6698;
+    margin: 40px;
 }
 
 /* summary */
